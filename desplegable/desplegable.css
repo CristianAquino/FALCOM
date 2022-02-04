@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 10%;
+  text-align: center;
+}
+a:hover {
+  text-decoration: underline;
+}
+section {
+  width: 90%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 10%;
+}
+article {
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 10%;
+}
+.main{
+    width: 100%;
+}
+.seccionToggleNuevo{
+    display: none;
+}
+.seccionToggle{
+    height: calc(100vh - 50px);
+    background-color: #fff;
+    color: #001f3f;
+    padding: 50px 0;
+}
+.btn_toggle{
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    display: block;
+    background-color: #ffdc00;
+}
+.btn_toggle:hover{
+    text-decoration: none;
+}
+.seccionToggle h2{
+    font-size: 60px;
+}
+.seccionToggle p{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.seccionToggle button{
+    background: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 40px;
+    display: inline-block;
+    border: 5px solid #001f3f;
+    transition: .3s all ease;
+}
+.seccionToggle button:hover{
+    border: 5px solid #0074d9;
+    color: #0074d9;
+}
+@media (max-height:550px) {
+    .seccionToggle{
+        overflow: scroll;
+    }
+}

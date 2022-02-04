@@ -1,0 +1,195 @@
+@import 'https://fonts.googleapis.com/css2? family = Roboto: wght @ 100 & display = swap';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #eee;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header p{
+    font-size: 50px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    border: 10px solid;
+    margin: auto;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.contenedor > div{
+    display: block;
+    padding: 20px;
+    color: white;
+    background-color: #2f89fc;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.25);
+}
+
+/* Grid */
+/* .contenedor{
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr) 1fr;
+    grid-template-rows: minmax(100px, auto) 400px;
+    grid-gap: 20px;
+} */
+
+/* .contenedor{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
+} */
+
+/*
+.contenedor .item{
+    background-color: #ff8000;
+     cambiar posicion y tamano 
+     considerar los numeros negativos 
+    
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    grid-row-start: 1;
+    grid-row-end: 4; 
+ 
+    grid-column: 1 / 4; va de 1 a 4 - es necesario la barra
+    grid-row: 1 / 3;va de 1 a 3 - es necesario la barra
+
+     span - indicamos cuantas columnas o filas keremos que abarque ya no nos fijamos en las lineas 
+
+    grid-column: span 3;
+    grid-row: 2 / span 2;
+}
+*/
+
+/* grid template area*/
+/* 
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header header header"
+                        "sidebar-1 contenido sidebar-2"
+                        "sidebar-1 widgets sidebar-2"
+                        "footer footer footer";
+}
+
+.contenedor .header{
+    background-color: #ff8000;
+    grid-column-start: header;
+    grid-column-end: header;
+} */
+/* 
+.contenedor .sidebar-1{
+    background-color: #393e46; */
+    /* forma numero 1
+    grid-column-start: sidebar-1;
+    grid-column-end: sidebar-1;
+
+    grid-row-start: sidebar-1;
+    grid-row-end: sidebar-1; */
+    
+    /* forma numero 2
+    grid-column: sidebar-1;
+    grid-row: sidebar-1; */
+
+    /* forma numero 3 */
+    /* grid-area: sidebar-1;
+} */
+/* 
+.contenedor .contenido{
+    background-color: white;
+    color: black;
+    grid-area: contenido;
+}
+
+.contenedor .widgets{
+    background-color: #ff8000;
+    grid-area: widgets;
+}
+
+.contenedor .sidebar-2{
+    background-color: #393e46;
+    grid-area: sidebar-2;
+}
+
+.contenedor .footer{
+    background-color: #222831;
+    grid-area: footer;
+} */
+
+/* alineacion de elementos */
+/* .contenedor{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+
+    alineacion horizontal
+    justify-items: center;
+
+    alineacion vertical
+    align-items: center;
+}
+
+.contenedor .sidebar-2{
+    background-color: #ff8000;
+    justify-self: stretch;inidico el posicionamiento de este unico elemento
+} */
+
+/* alineacion de tracks */
+/* .contenedor{
+    display: grid;
+    height: 700px;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 20px;
+
+    justify-content: space-evenly;
+    tambien se utiliza para alinear verticalmente
+    align-content: space-evenly;
+} */
+/* grid implicita */
+/* .contenedor{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 200px 100px 200px;
+
+     anadiendo tamano a elementos implicitos 
+    grid-auto-columns: 100px;
+
+     flow es el acomodo q se pone a los elementos 
+    grid-auto-flow: dense;
+}
+
+.contenedor .span2{
+    grid-column: span 2;
+    background-color: #ff8000;
+}
+
+.contenedor .span3{
+    grid-column: span 3;
+    background-color: #575757;
+} */
+
+/* auto fill y auto fit*/
+/* .contenedor{
+    display: grid;
+    gap: 20px;
+    /* auto-fill rellena con todas las columnas q pueda poner dentro, deja espacio disponible 
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    /* auto-fit rellena el contendor con todas las columnas q tenemos disponibles, se aprecia mejor con pocos elementos, no deja espacio disponible 
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+} */

@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.centrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.principal {
+  background-color: #f44336;
+  border-top: 20px solid #d32f2f;
+  color: white;
+  padding: 50px 0;
+  width: 100%;
+}
+.formulario input[type="text"] {
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+}
+.error {
+  border: 5px solid #d32f2f;
+  color: red;
+}
+.boton {
+  background: none;
+  border: 1px solid #d32f2f;
+  color: white;
+  display: inline-block;
+  font-size: 16px;
+  padding: 15px;
+}
+.boton:hover {
+  border: 1px solid white;
+}
+/* TAREAS */
+.lista {
+  list-style: none;
+}
+li {
+  border-bottom: 1px solid #b6b6b6;
+}
+a {
+  color: #212121;
+  display: block;
+  padding: 20px 0;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: line-through;
+}
